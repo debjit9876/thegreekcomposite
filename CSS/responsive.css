@@ -1,0 +1,499 @@
+/* Media query at 1200px  */
+@media screen and (max-width: 1199px) {
+  /* navbar  */
+  .navbar .container {
+    width: 96%;
+  }
+  .navbar .container .logo {
+    width: 25%;
+    padding: 0;
+  }
+  .navbar .container .nav-menu {
+    width: 50%;
+  }
+
+  /* hero section  */
+  .banner .container {
+    width: 96%;
+  }
+  .banner .container .row {
+    width: 47%;
+  }
+
+  /* book now section  */
+  .book-now .container {
+    width: 95%;
+  }
+  .book-now .container .row .row-content h2 {
+    font-size: 35px;
+  }
+  .book-now .container .row .row-content p {
+    font-size: 14px;
+  }
+  .book-now .container .row .row-content a {
+    width: 40%;
+  }
+
+  /* book now 1 section  */
+  .book-now-1 .container {
+    width: 96%;
+  }
+  .book-now-1 .container .row .row-swiper {
+    height: 40%;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 90% !important;
+  }
+  .swiper-button-prev {
+    left: 1.5% !important;
+  }
+  .swiper-button-next {
+    left: 7% !important;
+  }
+
+  /* services section  */
+  .services .container {
+    width: 96%;
+  }
+  .services .container .row .row-content .card p {
+    font-size: 14px;
+  }
+
+  /* book now 2 section  */
+  .book-now-2 .container {
+    width: 96%;
+  }
+  .book-now-2 .container .row .card {
+    padding: 2%;
+  }
+  .book-now-2 .container .row .card .card-content a {
+    width: 90%;
+  }
+
+  /* footer  */
+  .footer .container{
+    width: 96%;
+  }
+  .footer .container .row .row-left {
+    width: 30%;
+  }
+  .footer .container .row .row-right form input[type="submit"] {
+    width: 24%;
+  }
+  .footer .container .row .row-right ul {
+    width: 60%;
+  }
+}
+
+/* Media query at 1024px  */
+@media screen and (max-width: 1024px) {
+}
+
+/* Media query at 992px  */
+@media screen and (max-width: 991px) {
+  /* navbar  */
+  .navbar .container {
+    position: relative;
+    width: 100%;
+  }
+  .navbar .container .logo {
+    width: 45%;
+  }
+  .navbar .container .nav-menu ul {
+    position: absolute;
+    display: block;
+    top: 93px;
+    background-color: #00000080;
+    backdrop-filter: blur(5px);
+    height: auto;
+    width: 100%;
+    right: 0;
+    z-index: 1;
+  }
+  .navbar .container .nav-menu ul li {
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .navbar .container .nav-menu ul li a {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .navbar .container .button {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar .container .button .icon {
+    display: inline-block;
+    color: #000;
+    padding-left: 15%;
+    font-size: 20px;
+  }
+  .navbar .container .nav-menu ul {
+    display: none;
+  }
+
+  /* hero section  */
+  .banner .container .row {
+    width: 70%;
+  }
+  .banner .container .row h1 {
+    text-shadow: 0 0 10px #0000008e;
+  }
+
+  /* book now section  */
+  .book-now .container .row {
+    flex-direction: column;
+    height: 90%;
+  }
+  .book-now .container .row .row-img {
+    height: 50%;
+    width: 60%;
+  }
+  .book-now .container .row .row-img img {
+    height: 100%;
+  }
+  .book-now .container .row .row-content {
+    width: 85%;
+    height: 50%;
+    align-items: center;
+  }
+  .book-now .container .row .row-content h2 {
+    text-align: center;
+  }
+  .book-now .container .row .row-content p {
+    text-align: center;
+  }
+
+  /* book now 1 section  */
+  .book-now-1 .container .row a {
+    width: 25%;
+  }
+  .swiper-button-next {
+    left: 10% !important;
+  }
+
+  /* services section  */
+  .services .container .row .row-content .card {
+    width: 17%;
+  }
+  .services .container .row .row-content .card h3 {
+    font-size: 18px;
+  }
+}
+
+/* Media query at 768px  */
+@media screen and (max-width: 767px) {
+  /* navbar  */
+  .navbar .container .logo {
+    width: 65%;
+  }
+  .navbar .container .button {
+    width: 95%;
+  }
+  .navbar .container .button .icon {
+    padding-left: 5%;
+  }
+  /* banner  */
+  .banner .container {
+    justify-content: center;
+  }
+  .banner .container .row {
+    margin: 0;
+    align-items: center;
+    width: 100%;
+  }
+  .banner .container .row h1 {
+    font-size: 62px;
+    text-align: center;
+  }
+  .banner .container .row p {
+    text-align: center;
+  }
+  .banner .container .row a {
+    width: 55%;
+  }
+
+  /* book now section  */
+  .book-now .container .row .row-img {
+    width: 80%;
+    height: 40%;
+  }
+  .book-now .container .row .row-content {
+    height: 60%;
+  }
+
+  /* book now 1 section  */
+  .book-now-1 .container .row h2 {
+    font-size: 35px;
+  }
+  .swiper-button-next {
+    left: 13% !important;
+  }
+  .swiper-button-prev {
+    left: 2.3% !important;
+  }
+
+  /* book now 2 section  */
+
+  .book-now-2 .container .row .card .card-content {
+    height: 60%;
+  }
+
+  /* footer  */
+  .footer{
+    height: 600px;
+  }
+  .footer .container .row {
+    flex-direction: column;
+    height: 90%;
+  }
+  .footer .container .row .row-left{
+    height: 48%;
+    width: 100%;
+  }
+  .footer .container .row .row-left .contact ul{
+    width: 30%;
+  }
+  .footer .container .row .row-right{
+    height: 48%;
+    width: 100%;
+  }
+}
+
+/* Media query at 576px  */
+@media screen and (max-width: 575px) {
+  /* navbar  */
+  .navbar .container .button {
+    width: 100%;
+  }
+  .navbar .container .button a {
+    padding: 8px 11px;
+    text-align: center;
+  }
+
+  /* book now section  */
+  .book-now .container .row .row-img {
+    width: 80%;
+    height: 40%;
+  }
+  .book-now .container .row .row-content {
+    width: 90%;
+  }
+  .book-now .container .row .row-content h2 {
+    font-size: 30px;
+  }
+
+  /* book now 1 section  */
+  .book-now-1 .container .row h2 {
+    font-size: 30px;
+  }
+  .book-now-1 .container .row a {
+    width: 35%;
+  }
+  .book-now-1 .container .row .row-swiper {
+    height: 40%;
+  }
+  .swiper-slide {
+    height: 75% !important;
+  }
+  .swiper-button-next {
+    left: 15% !important;
+  }
+  .swiper-button-prev {
+    left: 3% !important;
+  }
+
+  /* services section  */
+  .services {
+    height: 700px;
+  }
+  .services .container .row {
+    height: 90%;
+  }
+  .services .container .row .row-head h2 {
+    font-size: 35px;
+  }
+  .services .container .row .row-content {
+    flex-wrap: wrap;
+    height: 75%;
+  }
+  .services .container .row .row-content .card {
+    width: 23%;
+    height: 48%;
+  }
+
+  /* book now 2 section  */
+  .book-now-2 {
+    height: 600px;
+  }
+  .book-now-2 .container::after {
+    top: 30%;
+  }
+  .book-now-2 .container .row {
+    flex-direction: column;
+  }
+  .book-now-2 .container .row .card {
+    width: 80%;
+    height: 48%;
+  }
+  .book-now-2 .container .row .card .card-content {
+    height: 100%;
+  }
+
+  /* footer  */
+  .footer .container .row .row-left .contact ul{
+    width: 40%;
+  }
+  .footer .container .row .row-right .head {
+    font-size: 30px;
+  }
+  .footer .container .row .row-right ul {
+    width: 80%;
+  }
+}
+
+/* Media query at 480px  */
+@media screen and (max-width: 480px) {
+  /* navbar  */
+  .navbar .container .logo {
+    width: 90%;
+  }
+  /* banner */
+  .banner .container .row h1 {
+    font-size: 40px;
+  }
+  .banner .container .row p {
+    font-size: 16px;
+  }
+  .banner .container .row a {
+    width: 80%;
+  }
+  /* book now section  */
+  .book-now .container .row {
+    height: 90%;
+  }
+  .book-now .container .row .row-img {
+    width: 100%;
+    height: 35%;
+  }
+  .book-now .container .row .row-content {
+    width: 100%;
+  }
+  .book-now .container .row .row-content h2 {
+    font-size: 25px;
+  }
+  .book-now .container .row .row-content a {
+    width: 80%;
+  }
+  /* book now 1 section  */
+  .book-now-1{
+    height: 900px;
+  }
+  .book-now-1 .container::after {
+    height: 70%;
+  }
+  .book-now-1 .container .row h2 {
+    font-size: 25px;
+    padding-top: 35px;
+  }
+  .book-now-1 .container .row p {
+    font-size: 14px;
+  }
+  .book-now-1 .container .row a {
+    width: 50%;
+  }
+  .book-now-1 .container .row .row-swiper {
+    height: 35%;
+  }
+  .swiper-slide {
+    height: 65% !important;
+  }
+  .swiper-button-next {
+    left: 20% !important;
+  }
+  .swiper-button-prev {
+    left: 4% !important;
+  }
+
+  /* services section  */
+  .services .container .row .row-head h2 {
+    font-size: 30px;
+  }
+  .services .container .row .row-content {
+    justify-content: space-evenly;
+  }
+  .services .container .row .row-content .card {
+    width: 30%;
+  }
+
+  /* book now 2 section  */
+  .book-now-2 .container .row .card {
+    width: 90%;
+  }
+
+  /* footer  */
+  .footer .container .row .row-right form input[type="email"]{
+    padding: 18px 35px;
+  }
+  .footer .container .row .row-right form i {
+    top: 30%;
+  }
+  .footer .container .row .row-right form input[type="submit"]{
+    padding: 10px 13px;
+    width: 30%;
+    top: 17%;
+  }
+  .footer .container .row .row-right ul{
+    width: 100%;
+  }
+}
+
+/* Media query at 350px  */
+@media screen and (max-width: 350px) {
+  /* services section  */
+  .services {
+    height: 900px;
+  }
+  .services .container .row .row-head h2 {
+    font-size: 25px;
+  }
+  .services .container .row .row-content .card {
+    width: 48%;
+    height: 30%;
+  }
+
+  /* book now 2 section  */
+  .book-now-2 .container .row .card {
+    width: 100%;
+    padding: 3%;
+  }
+  .book-now-2 .container .row #card-2 .card-content {
+    width: 50%;
+  }
+
+  /* footer  */
+  .footer .container .row .row-left .contact ul {
+    width: 70%;
+  }
+  .footer .container .row .row-right form i{
+    left: 3%;
+    top: 30%;
+  }
+  .footer .container .row .row-right form input[type="submit"]{
+    width: 40%;
+    top: 16%;
+  }
+  .footer .container .row .row-right ul{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .footer .container .row .row-right ul li a {
+    font-size: 14px;
+  }
+}

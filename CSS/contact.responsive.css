@@ -1,0 +1,119 @@
+/* Media query at 1200px  */
+@media screen and (max-width: 1199px) {
+  /* contact banner  */
+  .contact-banner .container {
+    width: 96%;
+  }
+
+  /* contact button section  */
+  .contact-btn .container {
+    width: 96%;
+  }
+
+  /* contact form section  */
+  .contact-form .container{
+    width: 96%;
+  }
+}
+
+/* Media query at 1024px  */
+@media screen and (max-width: 1024px) {
+}
+
+/* Media query at 992px  */
+@media screen and (max-width: 991px) {
+  /* contact button section  */
+  .contact-btn .container .row .card a {
+    font-size: 14px;
+  }
+}
+
+/* Media query at 768px  */
+@media screen and (max-width: 767px) {
+  /* contact button section  */
+  .contact-btn .container .row {
+    width: 100%;
+  }
+  .contact-btn .container .row .card {
+    width: 27%;
+  }
+}
+
+/* Media query at 576px  */
+@media screen and (max-width: 575px) {
+  /* contact banner  */
+  .contact-banner .container .row {
+    justify-content: center;
+  }
+
+  /* contact button section  */
+  .contact-btn .container .row {
+    justify-content: space-between;
+  }
+  .contact-btn .container .row .card {
+    width: 32%;
+  }
+
+  /* contact form section  */
+  .contact-form .container .row {
+    width: 100%;
+  }
+}
+
+/* Media query at 480px  */
+@media screen and (max-width: 480px) {
+  /* contact button section  */
+  .contact-btn{
+    height: 500px;
+  }
+  .contact-btn .container .row {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 10px 0;
+  }
+  .contact-btn .container .row .card {
+    width: 40%;
+    height: 47%;
+  }
+
+  /* contact form section  */
+  .contact-form {
+    height: 900px;
+  }
+  .contact-form .container .row h2{
+    padding: 0;
+  }
+  .contact-form .container .row{
+    padding: 25px 0;
+    height: 100%;
+  }
+  .contact-form .container .row .form-content{
+    height: 90%;
+  }
+  .contact-form .container .row .form-content form .phone-email {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 30%;
+  }
+  .contact-form .container .row .form-content form .phone-email .content{
+    width: 100%;
+  }
+  .contact-form .container .row .form-content form .org-msg-submit{
+    height: 60%;
+  }
+}
+
+/* Media query at 350px  */
+@media screen and (max-width: 350px) {
+  /* contact banner  */
+  .contact-banner .container .row h1 {
+    font-size: 60px;
+  }
+
+  /* contact button  */
+  .contact-btn .container .row .card {
+    width: 49%;
+    height: 47%;
+  }
+}

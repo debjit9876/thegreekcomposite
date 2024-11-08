@@ -1,0 +1,631 @@
+/*============ Common CSS ============ */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+section,
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 1225px;
+  padding: 0 10px;
+  margin: 0 auto;
+  width: 100%;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+
+/*============= navbar ========== */
+.navbar {
+  height: 93px;
+}
+.navbar .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar .container .logo {
+  width: 20%;
+  padding-left: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .container .logo img {
+  width: 100%;
+}
+.navbar .container .nav-menu {
+  width: 60%;
+}
+.navbar .container .nav-menu ul {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.navbar .container .nav-menu ul li {
+  padding: 0 16px;
+}
+.navbar .container .nav-menu ul li a {
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.navbar .container .nav-menu ul li a:hover {
+  color: #00000089;
+}
+.navbar .container .button a {
+  background-color: #943fa2;
+  border: 1px solid #943fa2;
+  color: #fff;
+  padding: 12px 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+}
+.navbar .container .button a:hover {
+  color: #943fa2;
+  background-color: #fff;
+}
+.navbar .container .button .icon {
+  display: none;
+}
+
+/*======= hero section ======= */
+.banner {
+  height: 100vh;
+  background: url(../IMG/banner-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+}
+.banner .container .row {
+  width: 35%;
+  height: 60%;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 38px;
+  z-index: 2;
+}
+.banner .container .row h1 {
+  font-size: 72px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+.banner .container .row p {
+  color: #fff;
+  font-size: 18px;
+  padding-bottom: 25px;
+}
+.banner .container .row a {
+  background-color: #943fa2;
+  color: #fff;
+  padding: 12px 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  width: 47%;
+}
+.banner .container .row a:hover {
+  color: #943fa2;
+  background-color: #fff;
+}
+
+/*============ book-now section ============= */
+.book-now {
+  height: 696px;
+}
+.book-now .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.book-now .container .row {
+  width: 100%;
+  height: 80%;
+  justify-content: space-between;
+}
+.book-now .container .row .row-img {
+  width: 54%;
+}
+.book-now .container .row .row-img img {
+  width: 100%;
+}
+.book-now .container .row .row-content {
+  width: 41%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.book-now .container .row .row-content h2 {
+  font-weight: 300;
+  font-size: 42px;
+}
+.book-now .container .row .row-content span {
+  font-weight: 600;
+  display: block;
+}
+.book-now .container .row .row-content p {
+  font-size: 16px;
+  color: #838383;
+}
+.book-now .container .row .row-content a {
+  background-color: #943fa2;
+  border: 1px solid #943fa2;
+  color: #fff;
+  padding: 12px 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  width: 30%;
+}
+.book-now .container .row .row-content a:hover {
+  color: #943fa2;
+  background-color: #fff;
+}
+
+/*=========== book now 1 section =========== */
+.book-now-1 {
+  height: 960px;
+}
+.book-now-1 .container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.book-now-1 .container::after{
+  position: absolute;
+  content: "";
+  width: 100vw;
+  right: 10%;
+  top: 0;
+  background-color: #953fa220;
+  height: 60%;
+  z-index: -1;
+}
+.book-now-1 .container .row {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.book-now-1 .container .row h2 {
+  padding-top: 50px;
+  font-size: 42px;
+  font-weight: 300;
+}
+.book-now-1 .container .row h2 span {
+  display: block;
+  font-weight: 600;
+}
+.book-now-1 .container .row p {
+  font-size: 16px;
+  color: #838383;
+  width: 85%;
+}
+.book-now-1 .container .row a {
+  background-color: #943fa2;
+  border: 1px solid #943fa2;
+  color: #fff;
+  padding: 12px 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  width: 16%;
+}
+.book-now-1 .container .row a:hover{
+  background-color: #953fa220;
+  color: #943fa2;
+}
+.book-now-1 .container .row .row-swiper {
+  width: 100%;
+  height: 45%;
+}
+/*========= styling in swiper ======= */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65% !important;
+}
+
+.swiper-slide img {
+  /* display: block; */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+  color: #943fa2 !important;
+  top: 90% !important;
+}
+.swiper-button-next{
+  left: 6% !important;
+}
+.swiper-button-next::after{
+  content: "\f054" !important;
+  font-family: FontAwesome !important;
+  font-size: 25px !important;
+  border: 1px solid #838383;
+  padding: 11px 15px;
+  border-radius: 50%;
+}
+.swiper-button-prev::after{
+  content: "\f053" !important;
+  font-family: FontAwesome !important;
+  font-size: 25px !important;
+  border: 1px solid #838383;
+  padding: 11px 15px;
+  border-radius: 50%;
+}
+
+/*========== services section ========= */
+.services {
+  height: 550px;
+}
+.services .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services .container .row {
+  flex-direction: column;
+  width: 100%;
+  height: 70%;
+  justify-content: space-between;
+}
+.services .container .row .row-head {
+  width: 100%;
+}
+.services .container .row .row-head h2 {
+  font-weight: 300;
+  font-size: 42px;
+}
+.services .container .row .row-head h2 span {
+  display: block;
+  font-weight: 600;
+}
+.services .container .row .row-content {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  justify-content: space-between;
+}
+.services .container .row .row-content .card {
+  width: 16%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5%;
+  transition: all 0.3s ease;
+}
+.services .container .row .row-content .card:hover {
+  box-shadow: 0 30px 70px #076ce02b;
+}
+.services .container .row .row-content .card figure {
+  height: 30%;
+}
+.services .container .row .row-content .card figure img {
+  height: 100%;
+}
+.services .container .row .row-content .card h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #943fa2;
+  padding-bottom: 8px;
+}
+.services .container .row .row-content .card .line {
+  content: "";
+  width: 25%;
+  height: 1%;
+  background-color: #c6c6c6;
+  margin: 15px 0;
+}
+
+/*=========== book now 2 section ======== */
+.book-now-2 {
+  height: 420px;
+  overflow: hidden;
+}
+.book-now-2 .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.book-now-2 .container::after {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  right: 30%;
+  top: 50%;
+  background-color: #953fa220;
+  height: 100%;
+  z-index: -1;
+}
+.book-now-2 .container .row {
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+.book-now-2 .container .row .card {
+  width: 49%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3%;
+}
+.book-now-2 .container .row .card .card-content {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.book-now-2 .container .row #card-2 .card-content {
+  width: 47%;
+}
+.book-now-2 .container .row .card .card-content h2 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+.book-now-2 .container .row .card .card-content p {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+.book-now-2 .container .row .card .card-content a {
+  background-color: #943fa2;
+  color: #fff;
+  padding: 12px 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  width: 60%;
+}
+.book-now-2 .container .row .card .card-content a:hover {
+  color: #943fa2;
+  background-color: #fff;
+}
+.book-now-2 .container .row #card-1 {
+  background: url(../IMG/book-img2-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.book-now-2 .container .row #card-2 {
+  background: url(../IMG/book-img2-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  align-items: end;
+  justify-content: start;
+}
+
+/*============== footer section =============== */
+.footer {
+  height: 468px;
+  background-color: #953fa220;
+}
+.footer .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .container .row {
+  width: 100%;
+  height: 55%;
+  justify-content: space-between;
+}
+.footer .container .row .row-left {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 100%;
+  justify-content: space-between;
+}
+.footer .container .row .row-left .contact {
+  height: 55%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .container .row .row-left .contact ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40%;
+  width: 70%;
+}
+.footer .container .row .row-left .contact ul li a {
+  padding: 10px 15px;
+  font-size: 20px;
+  border: 1px solid #953fa287;
+  border-radius: 49%;
+  transition: all 0.3s ease;
+}
+.footer .container .row .row-left .contact ul li a i {
+  color: #943fa2;
+}
+.footer .container .row .row-left .contact ul li a:hover {
+  i {
+    color: #fff;
+  }
+  background-color: #943fa2;
+}
+.footer .container .row .row-left .contact a {
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.footer .container .row .row-left .contact a:hover{
+  color: #000000a0;
+}
+.footer .container .row .row-left .contact a i {
+  color: #943fa2;
+  font-size: 16px;
+}
+.footer .container .row .row-left .content {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .container .row .row-right {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .container .row .row-right .head {
+  font-size: 42px;
+  font-weight: 300;
+}
+.footer .container .row .row-right .head span {
+  font-weight: 600;
+}
+.footer .container .row .row-right form {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+.footer .container .row .row-right form i {
+  position: absolute;
+  z-index: 1;
+  color: #943fa2;
+  top: 40%;
+  left: 2%;
+}
+.footer .container .row .row-right form input[type="email"] {
+  position: relative;
+  border: none;
+  border-radius: 10px;
+  padding: 25px 35px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  box-shadow: 0 30px 80px #953fa21b;
+}
+.footer .container .row .row-right form input::placeholder {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+}
+.footer .container .row .row-right form input[type="submit"] {
+  background-color: #943fa2;
+  border: 1px solid #943fa2;
+  color: #fff;
+  padding: 12px 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  width: 18%;
+  position: absolute;
+  right: 2%;
+  top: 24%;
+  cursor: pointer;
+}
+.footer .container .row .row-right form input[type="submit"]:hover {
+  background-color: #fff;
+  color: #943fa2;
+}
+.footer .container .row .row-right ul {
+  display: flex;
+  width: 55%;
+  justify-content: space-between;
+}
+.footer .container .row .row-right ul li a {
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.footer .container .row .row-right ul li a:hover {
+  color: #0000008e;
+}
+.footer .container .row .row-right .policy-btn {
+  text-transform: uppercase;
+  color: #943fa2;
+}
+.email-error-message{
+  color: #d11717;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 3px;
+}

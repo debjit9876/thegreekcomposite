@@ -1,0 +1,76 @@
+/* Media query at 1200px  */
+@media screen and (max-width: 1199px) {
+  /* request quote banner  */
+  .rq-banner .container {
+    width: 96%;
+  }
+
+  /* request quote form section  */
+  .rq-form .container {
+    width: 96%;
+  }
+}
+
+/* Media query at 1024px  */
+@media screen and (max-width: 1024px) {
+}
+
+/* Media query at 992px  */
+@media screen and (max-width: 991px) {
+}
+
+/* Media query at 768px  */
+@media screen and (max-width: 767px) {
+}
+
+/* Media query at 576px  */
+@media screen and (max-width: 575px) {
+  /* request form banner section  */
+  .rq-banner .container .row h1 {
+    font-size: 60px;
+    text-shadow: 1px 1px 10px #3e3e3e;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* request form section  */
+  .rq-form .container .row {
+    width: 100%;
+  }
+  .rq-form .container .row h2 {
+    font-size: 35px;
+  }
+  .rq-form .container .row .drop-down-1 h3,
+  .rq-form .container .row .drop-down-2 h3 {
+    font-size: 18px;
+  }
+}
+
+/* Media query at 480px  */
+@media screen and (max-width: 480px) {
+  /* request form section  */
+  .rq-form {
+    height: 1200px;
+  }
+  .rq-form .container .row {
+    padding: 0;
+  }
+  .rq-form .container .row .drop-down-1 h3,
+  .rq-form .container .row .drop-down-2 h3 {
+    font-size: 14px;
+  }
+  .rq-form .container .row .drop-down-1,
+  .rq-form .container .row .drop-down-2 {
+    height: 8%;
+  }
+}
+
+/* Media query at 350px  */
+@media screen and (max-width: 350px) {
+  .rq-form .container .row h2 {
+    font-size: 28px;
+  }
+  .rq-form .container .row .drop-down-2 {
+    height: 12%;
+  }
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta info -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="photgraphy related website" />
+    <!-- title  -->
+    <title>The Greek Composite</title>
+    <!-- CSS link  -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- contact page CSS link  -->
+    <link rel="stylesheet" href="./CSS/contact.style.css" />
+    <!-- Responsive CSS link  -->
+    <link rel="stylesheet" href="./CSS/responsive.css" />
+    <!-- contact page responsive CSS link  -->
+    <link rel="stylesheet" href="./CSS/contact.responsive.css" />
+    <!-- font awesome CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google fonts CDN  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS CSS  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- header  -->
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <div class="logo">
+            <a href="#"><img src="./IMG/logo.png" alt="logo" /></a>
+          </div>
+          <div class="nav-menu">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About us</a></li>
+              <li><a href="./contact.html">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="button">
+            <a href="./request-quote.html">Request a quote</a>
+            <i class="icon fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- main  -->
+    <main>
+      <!-- Contact banner  -->
+      <section class="contact-banner">
+        <div class="container">
+          <div class="row">
+            <h1 data-aos="zoom-out">Contact</h1>
+          </div>
+        </div>
+      </section>
+      <!-- Contact button section  -->
+      <section class="contact-btn">
+        <div class="container">
+          <div class="row">
+            <div class="card" data-aos="fade-up">
+              <figure>
+                <img src="./IMG/address.svg" alt="address" />
+              </figure>
+              <h2>Address</h2>
+              <a href="#">1441 U St. NW, Lorem, DC, D.C. 20009</a>
+            </div>
+            <div class="card" data-aos="fade-down">
+              <figure>
+                <img src="./IMG/phone.png" alt="phone" />
+              </figure>
+              <h2>Phone</h2>
+              <a href="tel:202 743 1972">202 743 1972</a>
+            </div>
+            <div class="card" data-aos="fade-up">
+              <figure>
+                <img src="./IMG/email.png" alt="email" />
+              </figure>
+              <h2>Email</h2>
+              <a href="mailto:info452@gmail.com">info452@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact form section  -->
+      <section class="contact-form">
+        <div class="container">
+          <div class="row">
+            <h2 data-aos="fade-right">Get in touch</h2>
+            <div class="form-content" >
+              <form name="RegForm" onsubmit="return validateForm()">
+                <p class="name">
+                  <input type="text" id="name" name="Name" placeholder="Name" data-aos="fade-up-left"/>
+                  <span id="name-error" class="error-message"></span>
+                </p>
+                <p class="phone-email">
+                  <span class="content">
+                    <input type="number" id="phone" name="Phone" placeholder="Phone" data-aos="fade-up-right"/>
+                    <span id="phone-error" class="error-message"></span>
+                  </span>
+                  <span class="content">
+                    <input type="email" id="email" name="EMail" placeholder="Email" data-aos="fade-up-left"/>
+                    <span id="email-error" class="error-message"></span>
+                  </span>
+                </p>
+                <p class="org-msg-submit">
+                  <input type="text" placeholder="Organization" data-aos="fade-up-right"/>
+                  <textarea placeholder="Message..." data-aos="fade-up-left"></textarea>
+                  <input type="submit" name="submit" value="Submit" onclick="showToast(sucessMsg)" data-aos="fade-up-right"/>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- book now 2 section   -->
+      <section class="book-now-2">
+        <div class="container">
+          <div class="row">
+            <div class="card" id="card-1" data-aos="fade-down-right">
+              <div class="card-content">
+                <h2>Composite builder</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                  imperdiet eget enim et
+                </p>
+                <a href="#">Book now</a>
+              </div>
+            </div>
+            <div class="card" id="card-2" data-aos="fade-up-left">
+              <div class="card-content">
+                <h2>Request free samples</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                  imperdiet eget enim et
+                </p>
+                <a href="#">Book now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer  -->
+    <footer>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="row-left">
+              <div class="contact">
+                <ul>
+                  <li>
+                    <a href="https://www.instagram.com/"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/"
+                      ><i class="fa-brands fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/"
+                      ><i class="fa-brands fa-youtube"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://www.x.com/"
+                      ><i class="fa-brands fa-x-twitter"></i
+                    ></a>
+                  </li>
+                </ul>
+                <a href="tel:+1-607-723-3512"
+                  ><i class="fa-solid fa-phone"></i> +1-607-723-3512</a
+                >
+                <a href="mailto:company@customersupport.com"
+                  ><i class="fa-regular fa-envelope"></i>
+                  company@customersupport.com</a
+                >
+              </div>
+              <div class="content">
+                <div class="logo">
+                  <a href="#"><img src="./IMG/logo.png" alt="logo" /></a>
+                </div>
+                <p>&copy;2024 THE GREEK COMPOSITE</p>
+              </div>
+            </div>
+            <div class="row-right">
+              <p class="head">Subscribe to our <span>Newsletter</span></p>
+              <form name="RegForm" onsubmit="return validateEmailForm()">
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" placeholder="Email" id="email" name="EMail"/>
+                <span id="email-error-1" class="email-error-message"></span>
+                <input type="submit" value="SUBSCRIBE" />
+              </form>
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About us</a></li>
+                <li><a href="./request-quote.html">Request a quote</a></li>
+                <li><a href="./contact.html">Contact us</a></li>
+              </ul>
+              <a href="#" class="policy-btn">Privacy policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="toastBox"></div>
+    </footer>
+
+    <!-- AOS js  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Initialize AOS  -->
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Jquery CDN  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Jquery link  -->
+    <script src="./JS/script.jquery.js"></script>
+
+    <!-- Formvalidation JS  -->
+    <script src="./JS/formvalidation.js"></script>
+
+    <!-- Footer email validation  -->
+    <script src="./JS/email-validation.js"></script>
+
+    <!-- toastbox notf. js  -->
+    <script>
+      let toastBox = document.getElementById('toastBox')
+      let sucessMsg = 'Successfully submitted';
+
+      function showToast(msg){
+        let toast = document.createElement('org-msg-submit');
+        toast.classList.add('toast');
+        toast.innerHTML = msg;
+        toastBox.appendChild(toast);
+      }
+    </script>
+  </body>
+</html>
